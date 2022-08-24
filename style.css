@@ -1,0 +1,52 @@
+.budget-sec{
+    height:500px;
+    width:200px;
+    
+    padding:5px;
+}
+.selected{
+    height:150px;
+    
+    padding: 5px;
+}
+.calculation{
+    margin-left: 20px;
+}
+.budget{
+    text-align: center;
+    
+}
+.font-1{
+    font-size: 15px;
+    font-weight: 100;
+}
+.input-option{
+    height:30px;
+    width: 120px;
+    margin-left:7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.player-calculate-btn{
+    margin-left:55px;
+    margin-top:10px;
+}
+.player-expenses{
+    margin-top: 5px;
+}
+.manager{
+    margin-top:10px;
+}
+.coach{
+    margin-top:10px;
+}
+.calculate-total{
+    margin-top:20px;
+    margin-left:30px;
+}
+.total{
+    margin-top:30px;
+}

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Team</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- header section starts -->
-    <section class="bg-success text-white rounded d-flex justify-content-around pt-4">
+    <section class="bg-dark text-white rounded d-flex justify-content-around pt-4">
         
             <img class="w-25 rounded" src="images/messi.png" alt="">
        
@@ -24,9 +25,10 @@
     <!-- header section ends -->
 
     <!-- main section starts -->
-    <!-- players -->
-    <section class="container mt-4 d-flex row w-50">
-        <div class="d-flex row row-cols-lg-3 justify-content-center  ">
+    
+    <section class="container mt-4 d-flex justify-content-between w-75">
+        <!-- players -->
+        <div class="d-flex row row-cols-lg-3 justify-content-center g-2 ml-1">
             <div class="mt-2 ">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/messi.png" alt="Card image cap">
@@ -90,20 +92,46 @@
                     </div>
                   </div>
             </div>
-    
+
         </div>
         <!-- players -->
 
-        <div class="w-25">
-            <div class="bg-dark text-white">
-                <h1>Selected Players</h1>
+        <!-- budget -->
+        <div class="w-25 calculation">
+            <div class="bg-dark text-white mt-4 border rounded">
+                <h3 class="selected">Selected Players</h3>
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ul>
             </div>
 
-            <div class="bg-dark text-white"> 
-                <h1>Budget</h1>
+            <div class="bg-dark text-white border rounded mt-4 budget-sec">
+                <h4 class="budget p-1">Budget</h4>
+                <div class="d-flex">
+                    <h4 class="font-1">Per Player</h4>
+                    <input class="input-option" type="text">
+                    
+                </div>
+                <button class="btn btn-primary player-calculate-btn">Calculate</button>
+                <h4 class="font-1 player-expenses" >Player Expenses:$<span id="player-total-amount"></span></h4>
+                <div class="d-flex">
+                    <h4 class="font-1 manager">Manager</h4>
+                    <input class="input-option" type="text ">
+                </div>
+                <div class="d-flex coach">
+                    <h4 class="font-1 manager">Coach</h4>
+                    <input class="input-option" type="text ">
+                </div>
+                <button class="btn btn-success calculate-total">Calculate Total</button>
+                <h4 class="font-1 total" >Total $<span class="total-money"></span> </h4>
             </div>
-         </div>        
-    </section>    
+         </div>
+         <!-- budget -->
+    </section>
     <!-- main section ends -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
