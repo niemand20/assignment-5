@@ -29,69 +29,84 @@
     <section class="container mt-4 d-flex justify-content-between w-75">
         <!-- players -->
         <div class="d-flex row row-cols-lg-3 justify-content-center g-2 ml-1">
+            <!-- player -1 -->
             <div class="mt-2 ">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/messi.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Messi</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -1 -->
     
     
-    
+            <!-- player -2 -->
             <div class="mt-2 ml-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/cr7.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Ronaldo</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -2 -->
+            
+            <!-- player -3 -->
             <div class="mt-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/neymar.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Neymar</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -3 -->
+
+            <!-- player -4 -->
             <div class="mt-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/rl9.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Lewandawski</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -4 -->
+
+            <!-- player -5 -->
             <div class="mt-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/suarez.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Suarez</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -5 -->
+
+            <!-- player -6 -->
             <div class="mt-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="images/kb9.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Benzema</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">SELECT</a>
+                      <button class="btn btn-primary" onclick="addToSelectedPlayers(this)">SELECT</button>
                     </div>
                   </div>
             </div>
+            <!-- player -6 -->
 
         </div>
         <!-- players -->
@@ -99,13 +114,9 @@
         <!-- budget -->
         <div class="w-25 calculation">
             <div class="bg-dark text-white mt-4 border rounded">
-                <h3 class="selected">Selected Players</h3>
-                <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
+                <h3 class="selected">V Players</h3>
+                <ul id="displayPlayersName">
+                    
                 </ul>
             </div>
 
@@ -135,5 +146,8 @@
     <!-- main section ends -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <!-- JS -->
 </body>
 </html>
