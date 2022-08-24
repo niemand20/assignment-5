@@ -44,14 +44,35 @@ document.getElementById("players-cost-calculate-btn").addEventListener("click",f
     for (let i=0; i<=playersArray.length-1; i++){
         total++
     }
-    console.log(total)
+    // console.log(total)
 
     const playersCost = document.getElementById("player-total-amount");
     // const previousPlayersCost = parseFloat(playersCost.innerText);
     
      const newPlayersCost = (playersFieldInput *total);
-     console.log(parseFloat(newPlayersCost));
+    //  console.log(parseFloat(newPlayersCost));
 
     playersCost.innerText = newPlayersCost;
-    console.log(playersCost.innerText);
+    // console.log(playersCost.innerText);
 });
+
+document.getElementById("calculate-total-cost").addEventListener("click", function(){
+    const playersExpenseTotal = document.getElementById("player-total-amount");
+    const playersExpenseTotalString =playersExpenseTotal.innerText;
+    const playersExpenseTotalNumber = parseFloat(playersExpenseTotalString)
+    //console.log("players total cost is ", playersExpenseTotalNumber);
+    
+     const managerExpense = document.getElementById("manager-cost-input");
+     const managerExpenseTotalNumber = parseFloat(managerExpense.value);
+     //console.log("manager cost is ", managerExpenseTotalNumber);
+
+     const coachExpense = document.getElementById("coach-cost-input");
+     const coachExpenseTotalNumber = parseFloat(coachExpense.value);
+     //console.log("coach cost is ",coachExpenseTotalNumber);
+
+     const totalBudget = document.getElementById("total-money");
+     const totalExpenseMoney = playersExpenseTotalNumber+managerExpenseTotalNumber
+     +coachExpenseTotalNumber;
+
+    totalBudget.innerText = totalExpenseMoney;
+})
